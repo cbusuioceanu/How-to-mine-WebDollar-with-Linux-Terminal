@@ -2,12 +2,13 @@
 Mine WebDollar with Linux Terminal
 
 ### 1. Install:
-####  a. ```sudo apt-get update && sudo apt-get upgrade && sudo apt install -y linuxbrew-wrapper && sudo apt-get install -y build-essential && sudo apt-get install -y clang && npm install -g node-gyp && npm install pm2 -g --unsafe-perm```
+####  a. ```sudo apt-get update && sudo apt-get upgrade && sudo apt install -y linuxbrew-wrapper && sudo apt-get install -y build-essential && sudo apt-get install -y clang```
 ####  b. ```curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash```
 ####  c. ```source ~/.profile```
 ####  d. ```nvm install 8.2.1```
 ####  e. ```nvm use 8.2.1```
 ####  f. ```nvm alias default 8.2.1```
+####  g. ```npm install -g node-gyp && npm install pm2 -g --unsafe-perm```
 
 ### 2. Run ```git clone https://github.com/WebDollar/Node-WebDollar.git Node-WebDollar1```
 ####  a. ```cd Node-WebDollar1```
