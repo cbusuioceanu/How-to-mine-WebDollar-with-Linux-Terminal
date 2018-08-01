@@ -1,4 +1,4 @@
-# How-to-mine-WebDollar-with-Linux-Terminal
+# How to mine WebDollar with Linux Terminal
 Mine WebDollar with Linux Terminal
 
 ### 1. Install:
@@ -22,9 +22,9 @@ npm install
 ```shell
 bash build-argon2.sh
 sed -i -- 's/TYPE: "cpu"/TYPE: "cpu-cpp"/g' src/consts/const_global.js
-sed -i -- 's/CPU_MAX: 0/CPU_MAX: THREAD_NUMBERS/g' src/consts/const_global.js -> edit THREAD_NUMBERS to your value
-sed -i -- 's/CPU_CPP_WORKER_NONCES_WORK: 20000/CPU_CPP_WORKER_NONCES_WORK: 30000/g' src/consts/const_global.js
-sed -i -- 's/CPU_CPP_WORKER_NONCES_WORK_BATCH: 500/CPU_CPP_WORKER_NONCES_WORK_BATCH: 100/g' src/consts/const_global.js
+sed -i -- 's/CPU_MAX: 0/CPU_MAX: THREAD_NUMBERS/g' src/consts/const_global.js # edit THREAD_NUMBERS to your value
+sed -i -- 's/CPU_CPP_WORKER_NONCES_WORK: 20000/CPU_CPP_WORKER_NONCES_WORK: 30000/g' src/consts/const_global.js # edit 30000 to your value
+sed -i -- 's/CPU_CPP_WORKER_NONCES_WORK_BATCH: 500/CPU_CPP_WORKER_NONCES_WORK_BATCH: 100/g' src/consts/const_global.js # edit 100 to your value
 ```
 ### 4. Run miner
 ```shell
