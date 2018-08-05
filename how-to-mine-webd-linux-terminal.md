@@ -3,7 +3,7 @@ Mine WebDollar with Linux Terminal
 
 ### 1. Install:
 ```shell
-sudo apt-get update && sudo apt-get upgrade && sudo apt install -y linuxbrew-wrapper && sudo apt-get install -y build-essential && sudo apt-get install -y clang
+sudo apt-get update -y && sudo apt-get upgrade -y && sudo apt install -y linuxbrew-wrapper && sudo apt-get install -y build-essential && sudo apt-get install -y clang
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
 source ~/.profile
 nvm install 8.2.1
