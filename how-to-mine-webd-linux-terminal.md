@@ -1,7 +1,7 @@
 # How to mine WebDollar with Linux Terminal
 Mine WebDollar with Linux Terminal
 
-### 1. Install:
+### 1. Manual Install and Clone:
 ```shell
 sudo apt-get update -y && sudo apt-get upgrade -y && sudo apt install -y linuxbrew-wrapper && sudo apt-get install -y build-essential && sudo apt-get install -y clang
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
@@ -13,13 +13,15 @@ nvm install 8.2.1
 nvm use 8.2.1
 nvm alias default 8.2.1
 npm install -g node-gyp && npm install pm2 -g --unsafe-perm
-```
-### 2. Clone and Install
-##### Note: it is recommended to clone WebDollar repo in your home user folder, eg: /home/YOUR_USER/
-```shell
-git clone https://github.com/WebDollar/Node-WebDollar.git Node-WebDollar1
+git clone https://github.com/WebDollar/Node-WebDollar.git Node-WebDollar1 # Note: it is recommended to clone WebDollar repo in your home user folder, eg: /home/YOUR_USER/
 cd Node-WebDollar1
 npm install
+```
+### 2. Automatic Install and Clone
+```shell
+git clone https://github.com/WebDollar/Node-WebDollar.git Node-WebDollar1 #Note: it is recommended to clone WebDollar repo in your home user folder, eg: /home/YOUR_USER/
+cd Node-WebDollar1
+bash miner-install.sh
 ```
 ### 3. Use argon2 CPP Optimization
 ```shell
@@ -28,10 +30,6 @@ bash build-argon2.sh
 ### 4. Run miner
 ```shell
 npm run commands
-```
-NOTE: after you close miner (with ctrl c) execute (just for now, will be fixed)->
-```shell
-killall argon2-bench2
 ```
 #### press 8 then Enter
 #### Mining starts after Blockchain is Downloaded
