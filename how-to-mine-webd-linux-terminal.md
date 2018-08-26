@@ -31,11 +31,15 @@ bash build-argon2.sh
 ```shell
 npm run commands
 ```
-#### press 8 then Enter
-#### Mining starts after Blockchain is Downloaded
-#### There is a blockchainDB3 backup you can download and use to instantly start mining!
+### 5. Fastest way to mine
+#### press ```10``` then hit Enter; paste POOL LINK then hit ENTER.
+
+### 6. SOLO-MINING
+#### Before starting SOLO-Mining, there is a blockchainDB3 backup you can download and use to instantly mine!
 #### Blockchain can be found and downloaded via ```curl``` or ```wget``` from: <a href="https://webdftp.vpnromania.ro/ftp/blockchainDB3.tar.gz">https://webdftp.vpnromania.ro/ftp/blockchainDB3.tar.gz</a> or <a href="https://webdftp.webdollarvpn.io/ftp/blockchainDB3.tar.gz">https://webdftp.webdollarvpn.io/ftp/blockchainDB3.tar.gz</a>
-#### Create a folder named ```blockchainDB3``` inside Node-WebDollar1 and unpack the downloaded arhive to that folder.
+#### ^ These backups are made at every 6 hours.
+#### Create a folder named ```blockchainDB3``` inside Node-WebDollar1 and unpack the downloaded arhive to that folder. If the folder is already created, delete the contents inside it and download the backup inside.
+#### To unzip it, run: ```tar -zxvf blockchainDB3.tar.gz -C .``` -> always run this inside blockchainDB3 folder!
 ----
 ### **Create a password for your WebDollar Wallet**
 #### -> After you run ```npm run commands```, press ```6``` then press ```0``` (0 is your first address in your Wallet). Copy/paste a 12 word passphrase and press enter
